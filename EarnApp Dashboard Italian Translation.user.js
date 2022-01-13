@@ -6,6 +6,8 @@
 // @author       Creeperiano99
 // @include      https://earnapp.com/dashboard*
 // @icon         https://www.google.com/s2/favicons?domain=https://earnapp.com
+// @updateURL      https://github.com/Creeperiano99/earnapp-dashboard-italian/raw/main/EarnApp%20Dashboard%20Italian%20Translation.user.js
+// @downloadURL    https://github.com/Creeperiano99/earnapp-dashboard-italian/raw/main/EarnApp%20Dashboard%20Italian%20Translation.user.js
 // @grant        GM_addStyle
 // ==/UserScript==
 
@@ -113,9 +115,10 @@ var replaceArry = [
    [/^Too Many Requests$/gi, 'Troppe Richieste'],
    [/^This device was already linked$/gi, 'Questo dispositivo è stato già collegato'],
    [/^Device successfully linked$/gi, 'Dispositivo collegato con successo'],
-   [/^Show hidden$/gi, 'Mostra nascosti'],
+   [/^Show hidden devices$/gi, 'Mostra dispositivi nascosti'],
    [/^Hide$/gi, 'Nascondi'],
    [/^Unhide$/gi, 'Mostra'],
+   [/^Valid referral$/gi, 'Affiliato valido'],
    [/^Transaction money was added back to your account balance, please verify you entered the correct payment details and try again$/gi, 'L\'importo della seguente transazione è stato riaccreditato nel saldo del tuo profilo. Per favore, verifica che i dettagli di pagamento siano corretti e riprova.'],
    // etc.
 ];
