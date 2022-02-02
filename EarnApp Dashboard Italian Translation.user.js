@@ -119,6 +119,9 @@ var replaceArry = [
    [/^Hide$/gi, 'Nascondi'],
    [/^Unhide$/gi, 'Mostra'],
    [/^Valid referral$/gi, 'Affiliato valido'],
+   [/^Leaderboard/gi, 'Classifica'],
+   [/^Place$/gi, 'Pos.'],
+   [/^User$/gi, 'Utente'],
    [/^Transaction money was added back to your account balance, please verify you entered the correct payment details and try again$/gi, 'L\'importo della seguente transazione è stato riaccreditato nel saldo del tuo profilo. Per favore, verifica che i dettagli di pagamento siano corretti e riprova.'],
    // etc.
 ];
