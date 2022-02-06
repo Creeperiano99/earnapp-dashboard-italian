@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         EarnApp Dashboard Italian Translation
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      1.1
 // @description  Italian translation of EarnApp Dashboard
 // @author       Creeperiano99
 // @include      https://earnapp.com/dashboard*
@@ -116,8 +116,14 @@ var replaceArry = [
    [/^This device was already linked$/gi, 'Questo dispositivo è stato già collegato'],
    [/^Device successfully linked$/gi, 'Dispositivo collegato con successo'],
    [/^Show hidden devices$/gi, 'Mostra dispositivi nascosti'],
-   [/^Hide$/gi, 'Nascondi'],
+   [/^Hide$/g, 'Nascondi'],
+   [/^ \(hidden\)$/g, ' \(nascosto\)'],
+   [/^Hide device$/g, 'Nascondi dispositivo'],
+   [/^You are about to $/g, 'Stai per '],
+   [/^hide$/g, 'nascondere'],
+   [/^ device: $/g, ' il dispositivo: '],
    [/^Unhide$/gi, 'Mostra'],
+   [/^Leaderboard/gi, 'Classifica'],
    [/^Valid referral$/gi, 'Affiliato valido'],
    [/^Leaderboard/gi, 'Classifica'],
    [/^Place$/gi, 'Pos.'],
