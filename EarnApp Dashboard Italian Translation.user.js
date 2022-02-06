@@ -6,8 +6,8 @@
 // @author       Creeperiano99
 // @include      https://earnapp.com/dashboard*
 // @icon         https://www.google.com/s2/favicons?domain=https://earnapp.com
-// @updateURL      https://github.com/Creeperiano99/earnapp-dashboard-italian/raw/main/EarnApp%20Dashboard%20Italian%20Translation.user.js
-// @downloadURL    https://github.com/Creeperiano99/earnapp-dashboard-italian/raw/main/EarnApp%20Dashboard%20Italian%20Translation.user.js
+// @updateURL      https://github.com/Creeperiano99/earnapp-italian-translation/raw/main/EarnApp%20Dashboard%20Italian%20Translation.user.js
+// @downloadURL    https://github.com/Creeperiano99/earnapp-italian-translation/raw/main/EarnApp%20Dashboard%20Italian%20Translation.user.js
 // @grant        GM_addStyle
 // ==/UserScript==
 
