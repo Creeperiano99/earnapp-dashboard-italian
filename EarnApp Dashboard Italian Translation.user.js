@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         EarnApp Dashboard Italian Translation
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  Italian translation of EarnApp Dashboard
 // @author       Creeperiano99
 // @include      https://earnapp.com/dashboard*
@@ -128,6 +128,8 @@ var replaceArry = [
    [/^Leaderboard/gi, 'Classifica'],
    [/^Place$/gi, 'Pos.'],
    [/^User$/gi, 'Utente'],
+   [/^Device seems to be offline$/gi, 'Pare che il dispositivo sia offline'],
+   [/^Device online since/gi, 'Dispositivo online dalle'],
    [/^Transaction money was added back to your account balance, please verify you entered the correct payment details and try again$/gi, 'L\'importo della seguente transazione è stato riaccreditato nel saldo del tuo profilo. Per favore, verifica che i dettagli di pagamento siano corretti e riprova.'],
    // etc.
 ];
@@ -159,3 +161,13 @@ while (txtNode = txtWalker.nextNode()) {
 
 setTimeout((function() {$("body").append('<h3 class="ea_text ea_text_xs">Traduzione italiana offerta da Creeperiano99</h3>'); window.scrollTo(9999, 9999);}), 2000)
 GM_addStyle("body { overflow: hidden; }");
+
+setTimeout((function() {
+const temp = $("*").html();
+const online = temp.match(/easd_dot_online/gi).length
+const offline = temp.match(/easd_dot_offline/gi).length
+const ul = document.getElementsByClassName('ead_brick ead_brick_balance');
+const li = document.createElement('p');
+li.className = "ea_text ea_text_xs ea_text_bold"
+li.innerHTML = "<br><br><div class=\"ea_panel eap_elevated ead_brick_row\"><h3 class=\"ea_text ea_text_m\">Stato Dispositivi</h3><br>Dispositivi online: " + online + "<br>Dispositivi offline: " + offline + "<\/div>"
+ul[0].appendChild(li); window.scrollTo(9999, 9999);}), 5000)
